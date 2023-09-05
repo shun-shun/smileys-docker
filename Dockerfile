@@ -12,4 +12,4 @@ RUN pip3 install --upgrade pip && \
     pip install python-multipart
 
 
-ENTRYPOINT ["uvicorn", "main:app", "--host", "0.0.0.0", "--reload"]
+ENTRYPOINT ["uvicorn", "main:app", "--host", "0.0.0.0", "--reload", "--port", "80"]
