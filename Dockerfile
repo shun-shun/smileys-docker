@@ -9,7 +9,8 @@ RUN pip3 install --upgrade pip && \
     pip3 install "uvicorn[standard]" && \
     pip3 install requests && \
     pip3 install py-feat && \
-    pip install python-multipart
+    pip install python-multipart && \
+    pip install pyheif
 
 
 ENTRYPOINT ["uvicorn", "main:app", "--host", "0.0.0.0", "--reload", "--port", "80"]
