@@ -42,13 +42,13 @@ async def get_uploadfile(upload_file: UploadFile): # フロント側のFormData�
             # その他は例外
             raise TypeError
     
-    try:
+    # try:
         result = smiles.start(img)
         return result
-    except:
-        dummy_smile = random.uniform(0.3, 0.6)
-        randam_data = f"[[0.0,0.0,{dummy_smile}]]"
-        return randam_data
+    # except:
+    #     dummy_smile = random.uniform(0.3, 0.6)
+    #     randam_data = f"[[0.0,0.0,{dummy_smile}]]"
+    #     return randam_data
         
 
     
